@@ -1,0 +1,38 @@
+body{
+  background-color: rgb(35, 30, 30);
+  color: white;
+}
+
+.bg-lightgrey{
+  background-color: #E5E5E5;
+}
+
+.fa-solid, .fa-magnifying-glass {
+  color: #2A2E32;
+
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input input[type="search"] {
+  padding-left: 2.5rem !important;
+}
+
+.search-input .fa-magnifying-glass {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+}
+
+.fa-bell {
+  color: #FF8F00;
+
+}
+
+
+
+
+
