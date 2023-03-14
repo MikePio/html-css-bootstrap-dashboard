@@ -12,14 +12,17 @@ body{
 
 }
 
+/* procedimento per inserire l'icona all'interno dell'inout di ricerca */
 .search-input {
   position: relative;
 }
 
+/* * padding per lasciare dello spazio alla barra di ricerca all'interno dell'input */
 .search-input input[type="search"] {
   padding-left: 2.5rem !important;
 }
 
+/* posizionamento dell'icona */
 .search-input .fa-magnifying-glass {
   position: absolute;
   top: 50%;
