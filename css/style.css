@@ -80,6 +80,14 @@ body{
   }
 }
 
+/* setion */
+.status{
 
+}
+
+.status .mp-tag{
+  background-color: #165BBA;
+  /* width: auto; */
+}
 
 
