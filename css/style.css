@@ -7,6 +7,13 @@ body{
   background-color: #E5E5E5;
 }
 
+/* * header///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* * navbar */
+.navbar{
+  z-index: 100;
+}
+
 .fa-solid, .fa-magnifying-glass {
   color: #2A2E32;
 
@@ -19,6 +26,8 @@ body{
 
 /* * padding per lasciare dello spazio alla barra di ricerca all'interno dell'input */
 .search-input input[type="search"] {
+  /* oppure */
+  /* .search-input .form-control { */
   padding-left: 2.5rem !important;
 }
 
@@ -35,6 +44,41 @@ body{
 
 }
 
+/* * sidebar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.sidebar {
+  /* *meglio non utilizzare position fixed perché poi si dovrebbe aggiungere del padding o del margin alla parte centrale del main */
+  /* position: fixed;
+  top: 61.5px;
+  bottom: 0;
+  left: 0; */
+  /* z-index: 2; */
+  /* *soluzione migliore 61.5 è l'altezza dell'header ma non necessario dal momento in cui dovesse esistere position: fixed; top: 61.5px; bottom: 0; left: 0;*/
+  width: 60px;
+  height: calc(100vh - 61.5px); 
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #051E34;
+  background-image: url("/img/sidebar-bg.png");
+}
+
+.sidebar .fa-solid{
+  color: white;
+}
+
+.sidebar-top a:hover, .sidebar-bottom a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* per rimuovere la linea che sottolinea il link  */
+.sidebar-top a, .sidebar-bottom a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 120px;
+  }
+}
 
 
 

@@ -19,23 +19,29 @@
 <body>
 
   <head>
-    <!-- nav desktop -->
+    <!-- nav -->
     <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid bg-white p-1">
-        <a class="navbar-brand m-0">
+      <div class="container-fluid bg-white p-1 px-2">
+
+    <!-- nav left -->
+        <a href="#" class="navbar-brand m-0">
           <img src="img/logo.svg" alt="logo-mobile" style="height: 25px;" class="d-none d-xl-block">
-          <img src="img/mobile-logo.png" alt="logo-mobile" style="height: 50px;" class="d-block d-xl-none">
+          <img src="img/mobile-logo.png" alt="logo-mobile" style="height: 25px;" class="d-block d-xl-none">
         </a>
+
+    <!-- nav center -->
         <form class="d-flex col-8 col-md-9" role="search">
           <div class="search-input w-100">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input class="form-control mx-1 bg-lightgrey" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
           </div>
         </form>
+
+    <!-- nav right -->
         <a href="#" class="d-none d-xl-block btn m-0 "><i class="fa-solid fa-list-ul"></i></a>
         <a href="#" class="d-none d-xl-block btn m-0 "><i class="fa-solid fa-circle-question"></i></a>
         <a href="#" class="d-none d-xl-block btn m-0 "><i class="fa-solid fa-ellipsis-vertical"></i></a>
-        <a class="nav-link m-0 px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link m-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fa-solid fa-bell"></i>
         </a>
         <ul class="dropdown-menu dropdown-menu-end">
@@ -43,19 +49,68 @@
           <li><a class="dropdown-item" href="#">Fatturazione</a></li>
           <li><a class="dropdown-item" href="#">Logout</a></li>
         </ul>
+
       </div>
     </nav>
-    
-
-    
-
-
-
-
 
   </head>
 
   <main>
+
+    <!-- sidebar -->
+    <!-- <div class="container-fluid">
+      <div class="row"> -->
+        <!-- <nav class="col-md-2 col-lg-1 d-md-block sidebar d-flex flex-column align-items-center justify-content-between"> -->
+        <nav class="sidebar p-0 d-flex flex-column align-items-center justify-content-between">
+
+          <!-- sidebar-top -->
+          <div class="sidebar-top py-2">
+            <a href="#" class="d-block text-start text-white p-2">
+              <i class="fa-solid fa-house"></i>
+              <div class="d-none d-md-inline">Home</div>
+            </a>
+            <a href="#" class="d-block text-start text-white p-2">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span class="d-none d-md-inline">Stats</span>
+            </a>
+            <a href="#" class="d-block text-start text-white p-2">
+              <i class="fa-solid fa-signal"></i>
+              <span class="d-none d-md-inline">Signals</span>
+            </a>
+          </div>
+
+          <!-- sidebar-bottom -->
+          <div class="sidebar-bottom py-2">
+            <a href="#" class="d-block text-start text-white p-2">
+              <i class="fa-solid fa-gear"></i>
+              <span class="d-none d-md-inline">Admin</span>
+            </a>
+          </div>
+
+        </nav>
+      <!-- </div>
+    </div> -->
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
