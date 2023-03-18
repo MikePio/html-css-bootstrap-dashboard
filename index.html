@@ -18,10 +18,11 @@
 </head>
 <body>
 
-  <head>
+  <header>
     <!-- nav -->
     <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid bg-white p-1 px-2">
+      <div class="container-fluid bg-white p-1 px-3">
+      <!-- MEGLIO UTILIZZARE una row come contenitore e poi inserire ad ogni colonna col-auto -->
 
     <!-- nav left -->
         <a href="#" class="navbar-brand m-0">
@@ -44,7 +45,7 @@
         <a class="nav-link m-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fa-solid fa-bell"></i>
         </a>
-        <ul class="dropdown-menu dropdown-menu-end">
+        <ul class="dropdown-menu dropdown-menu-end ">
           <li><a class="dropdown-item" href="#">Profilo</a></li>
           <li><a class="dropdown-item" href="#">Fatturazione</a></li>
           <li><a class="dropdown-item" href="#">Logout</a></li>
@@ -53,12 +54,14 @@
       </div>
     </nav>
 
-  </head>
+  </header>
 
   <main class="d-flex">
 
     <!-- * sidebar a sinistra -->
         <nav class="sidebar p-0 d-flex flex-column align-items-center justify-content-between">
+        <!-- Oppure si può utilizzare flex-shrink-0 h-100 + il padding sia orizzontalmente sia verticalmente per adattare la larghezza con flex-shrink-0 in base al contenuto e l'altezza è il 100% della pagina IN QUESTO MODO NON BISOGNA CREARE MEDIA QUERY  -->
+        <!-- Mentre per la parte di destra si può utilizzare flex-shrink-1 -->
 
           <!-- sidebar-top -->
           <div class="sidebar-top py-2">
@@ -77,6 +80,7 @@
           </div>
 
           <!-- sidebar-bottom -->
+          <!-- qui si può utilizzare margin-top-auto per creare lo spazio tra gli elementi di sidebar-top con gli elementi di sidebar-bottom  -->
           <div class="sidebar-bottom py-2">
             <a href="#" class="d-block text-start text-white p-2">
               <i class="fa-solid fa-gear"></i>
@@ -92,35 +96,42 @@
       <!-- section status -->
       <section class="status">
 
-        <div class="col d-flex flex-column justify-content-between align-items-start text-white bg-primary w-100 p-2" >
+        <div class="col d-flex flex-column justify-content-between align-items-start text-white bg-primary w-100 p-2 flex-md-row justify-content-md-between align-items-md-start px-md-4" >
           
           <!-- nuovo studente -->
-          <div class="row d-flex flex-row justify-content-start w-100 h-50 pt-3">
-            <div class="col-4 new-student m-0  pe-0">Nuovo studente</div> 
+          <div class="row d-flex flex-row justify-content-start  h-50 pt-3 order-md-3 col-md-auto pt-md-1">
+            <!-- prima -->
+            <!-- <div class="col-4 new-student m-0  pe-0 col-md-auto pe-md-2">Nuovo studente</div>  -->
+            <!-- dopo -->
+            <div class="col-auto new-student m-0  pe-3 col-md-auto pe-md-2">Nuovo studente</div> 
             <!-- ! PULSANTE OFF CANVAS -->
             <!-- <div class="col new-student"><i class="fa-regular fa-square-plus fs-1 mx-2 w-auto"></i></div> -->
-            <i class="col-1 fa-regular fa-square-plus fs-1 p-0"></i>
+            <!-- prima -->
+            <!-- <i class="col-1 fa-regular fa-square-plus fs-1 p-0 col-md-auto"></i> -->
+            <!-- dopo -->
+            <i class="col-auto fa-regular fa-square-plus fs-1 p-0 col-md-auto"></i>
             <!-- <span class="col-1 p-1 border border-light rounded-1 m-0 align-middle ">+</span> -->
           </div>
 
           <!-- piano boolean -->
-          <div class="row d-flex flex-column container-fluid w-100 h-50 py-3">
-            <div class="row d-flex flex-row justify-content-start align-items-center container-fluid">
-              <div class="col-3 fs-2 m-0 p-0">Boolean</div>
-              <div class="col-3 rounded-5 mp-tag text-center">Piano blaze</div>
+          <div class="row d-flex flex-column container-fluid h-50 py-3 order-md-1 col-md-auto py-md-0 px-lg-0">
+            <div class="row d-flex flex-row justify-content-start align-items-center container-fluid g-md-0 pe-md-3 ">
+              <div class="col-3 fs-2 m-0 p-0 col-md-auto pe-md-2">Boolean</div>
+              <div class="col-3 rounded-5 mp-tag text-center col-md-auto pb-md-0 px-md-2">Piano blaze</div>
             </div>
-            <div class="row d-flex flex-row justify-content-start align-items-center container-fluid">
-              <div class="col-2 rounded-5 mp-tag text-center m-0 p-0 pb-1">3app</div>
-              <div class="col-1 fs-3 pb-2 text-center">»</div>
-              <div class="col-1 rounded-5 mp-tag text-center align-middle pb-1">+</div>
-              <div class="col rounded-5 mp-tag d-none">Boolean mobile</div>
-              <div class="col rounded-5 mp-tag d-none">Boolean web app</div>
-              <div class="col rounded-5 mp-tag d-none">Boolean blog app</div>
+            <div class="row d-flex flex-row justify-content-start align-items-center container-fluid pb-md-3 g-lg-0">
+              <div class="col-2 rounded-5 mp-tag text-center m-0 p-0 pb-1 col-md-auto pb-md-1 px-md-2">3app</div>
+              <div class="col-1 fs-3 pb-2 text-center col-md-auto pe-md-3 pe-lg-1 ps-lg-1">»</div>
+              <div class="col-1 rounded-5 mp-tag text-center align-middle pb-1 col-md-auto d-lg-none">+</div>
+              <div class="col-auto rounded-5 mp-tag d-none d-lg-block px-lg-1 me-lg-2">Boolean mobile</div>
+              <div class="col-auto rounded-5 mp-tag d-none d-lg-block px-lg-1 me-lg-2">Boolean web app</div>
+              <div class="col-auto rounded-5 mp-tag d-none d-lg-block">Boolean blog app</div>
             </div>
           </div>
 
           <!-- utenti attivi -->
-          <div class="col w-100 h-50 pb-3">
+          <!-- <div class="col w-100 h-50 pb-3 order-md-2 "> -->
+          <div class="col-auto h-50 pb-3 order-md-2 pe-md-3 pt-md-1">
             <div class="m-0 p-0">Studenti online negli ultimi 30 minuti</div> 
             <div class="fs-2 m-0 p-0">125</div>
           </div>
