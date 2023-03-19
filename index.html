@@ -81,6 +81,7 @@
 
           <!-- sidebar-bottom -->
           <!-- qui si può utilizzare margin-top-auto per creare lo spazio tra gli elementi di sidebar-top con gli elementi di sidebar-bottom  -->
+          <!-- OPPURE si può creare una lista in cui solo l'ultimo elemento ha margin-top-auto al posto di creare sidebar-top e sidebar-bottom -->
           <div class="sidebar-bottom py-2">
             <a href="#" class="d-block text-start text-white p-2">
               <i class="fa-solid fa-gear"></i>
@@ -99,18 +100,96 @@
         <div class="col d-flex flex-column justify-content-between align-items-start text-white bg-primary w-100 p-2 flex-md-row justify-content-md-between align-items-md-start px-md-4" >
           
           <!-- nuovo studente -->
-          <div class="row d-flex flex-row justify-content-start  h-50 pt-3 order-md-3 col-md-auto pt-md-1">
-            <!-- prima -->
-            <!-- <div class="col-4 new-student m-0  pe-0 col-md-auto pe-md-2">Nuovo studente</div>  -->
-            <!-- dopo -->
+          <div class="row d-flex flex-row justify-content-start align-items-center  h-50 pt-3 order-md-3 col-md-auto pt-md-1">
             <div class="col-auto new-student m-0  pe-3 col-md-auto pe-md-2">Nuovo studente</div> 
             <!-- ! PULSANTE OFF CANVAS -->
             <!-- <div class="col new-student"><i class="fa-regular fa-square-plus fs-1 mx-2 w-auto"></i></div> -->
-            <!-- prima -->
-            <!-- <i class="col-1 fa-regular fa-square-plus fs-1 p-0 col-md-auto"></i> -->
-            <!-- dopo -->
-            <i class="col-auto fa-regular fa-square-plus fs-1 p-0 col-md-auto"></i>
             <!-- <span class="col-1 p-1 border border-light rounded-1 m-0 align-middle ">+</span> -->
+            <!-- * <i class="col-auto fa-regular fa-square-plus fs-1 p-0 col-md-auto"></i>    -->
+            <button class="btn btn-primary fa-regular fa-square-plus col-auto fs-1 p-0 col-md-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="" aria-describedby="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="" aria-describedby="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Indirizzo Email</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="" aria-describedby="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Città</label>
+                    <input type="text" class="form-control" id="" aria-describedby="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Stato</label>
+                    <div class="input-group">
+                      <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected>Scegli...</option>
+                        <option value="1">Italia</option>
+                        <option value="2">France</option>
+                        <option value="3">Germany</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">CAP</label>
+                    <input type="number" class="form-control" id="" aria-describedby="">
+                  </div>
+                  <div class="input-group mb-3">
+                    <label for="" class="form-label">Foto</label>
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Salva</button>
+                  <button type="reset" value="Input reset button" class="btn btn-warning">Svuota</button>
+                </form>
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+
           </div>
 
           <!-- piano boolean -->
@@ -138,33 +217,7 @@
 
         </div>
 
-        <!-- <div class="row flex-column justify-content-between align-items-center text-white bg-primary">
-          <div class="col d-flex p-2">
-            <div class="">Nuovo studente</div> 
-            ! PULSANTE OFF CANVAS
-            <i class="fa-regular fa-square-plus fs-1 mx-2"></i>
-            <span class="border border-light rounded-1 fs-1 align-middle">+</span>
-          </div>
-          <div class="col">
-            <div class="row d-flex flex-row">
-              <div class="fs-2">Boolean</div>
-              <span class="rounded-3 mp-tag ">Piano blaze</span>
-            </div>
-            <div class="row flex-column">
-              <span class="badge rounded-pill tag">3app</span>
-              <div class="div">»</div>
-              <span class="badge rounded-pill tag">+</span>
-              <span class="badge rounded-pill tag d-none">Boolean mobile</span>
-              <span class="badge rounded-pill tag d-none">Boolean web app</span>
-              <span class="badge rounded-pill tag d-none">Boolean blog app</span>
-            </div>
-          </div>
-          <div class="col">
-            <div>Studenti online negli ultimi 30 minuti</div> 
-            <div class="fs-2">125</div>
-          </div>
 
-        </div> -->
 
 
       </section>
