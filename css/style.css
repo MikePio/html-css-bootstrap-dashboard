@@ -82,10 +82,12 @@ body{
 
 /* * container-main */
 
+/* offcanvas */
 
 
-
-
+.offcanvas {
+  --bs-offcanvas-width: 800px;
+}
 
 
 

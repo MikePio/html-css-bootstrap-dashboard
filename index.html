@@ -105,54 +105,44 @@
             <!-- ! PULSANTE OFF CANVAS -->
             <!-- <div class="col new-student"><i class="fa-regular fa-square-plus fs-1 mx-2 w-auto"></i></div> -->
             <!-- <span class="col-1 p-1 border border-light rounded-1 m-0 align-middle ">+</span> -->
-            <!-- * <i class="col-auto fa-regular fa-square-plus fs-1 p-0 col-md-auto"></i>    -->
+            <!-- <i class="col-auto fa-regular fa-square-plus fs-1 p-0 col-md-auto"></i>    -->
             <button class="btn btn-primary fa-regular fa-square-plus col-auto fs-1 p-0 col-md-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+            <!-- * dimensioni offcanvas di default modificate in css (width:800px)-->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
-                <form>
-                  <div class="mb-3">
+                <form class="row">
+                  <div class="mb-3 col-md-6">
                     <label for="" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="" aria-describedby="">
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-3 col-md-6">
                     <label for="" class="form-label">Cognome</label>
                     <input type="text" class="form-control" id="" aria-describedby="">
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-3 col-md-6">
                     <label for="exampleInputEmail1" class="form-label">Email</label>
                     <div class="input-group mb-3">
                       <span class="input-group-text" id="basic-addon1">@</span>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-3 col-md-6">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Indirizzo Email</label>
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1">@</span>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <div class="mb-3">
+                  <div class="mb-3 col-12">
                     <label for="" class="form-label">Indirizzo</label>
                     <input type="text" class="form-control" id="" aria-describedby="">
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-3 col-md-6">
                     <label for="" class="form-label">Città</label>
                     <input type="text" class="form-control" id="" aria-describedby="">
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-3 col-md-4">
                     <label for="" class="form-label">Stato</label>
                     <div class="input-group">
                       <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
@@ -163,20 +153,20 @@
                       </select>
                     </div>
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-3 col-md-2">
                     <label for="" class="form-label">CAP</label>
                     <input type="number" class="form-control" id="" aria-describedby="">
                   </div>
-                  <div class="input-group mb-3">
+                  <div class="mb-3 col-md-12">
                     <label for="" class="form-label">Foto</label>
                     <input type="file" class="form-control" id="inputGroupFile02">
                   </div>
-                  <div class="mb-3 form-check">
+                  <div class="mb-3 form-check col-md-12">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
                   </div>
-                  <button type="submit" class="btn btn-primary">Salva</button>
-                  <button type="reset" value="Input reset button" class="btn btn-warning">Svuota</button>
+                  <button type="submit" class="btn btn-primary col-md-1 me-1 mb-2">Salva</button>
+                  <button type="reset" value="Input reset button" class="btn btn-warning col-md-1">Svuota</button>
                 </form>
 
 
