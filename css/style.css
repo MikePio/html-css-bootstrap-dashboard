@@ -82,19 +82,9 @@ body{
 
 /* * container-main */
 
-/* offcanvas */
-
-
-.offcanvas {
-  --bs-offcanvas-width: 800px;
-}
-
-
-
-
-/* setion */
+/* * setion status */
 .status{
-
+  
 }
 
 .status .mp-tag{
@@ -103,4 +93,29 @@ body{
   /* width: auto; */
 }
 
+/* * offcanvas */
+.offcanvas {
+  --bs-offcanvas-width: 800px;
+}
 
+/* * Left Main Content  */
+.ms-table th:not(:nth-child(1)), .ms-table td:not(:nth-child(1)){
+  /*  width: 6.25rem = 100px */
+  width: 6.25rem;
+  text-align: center;
+}
+
+.ms-table img, .ms-table td button{
+  width: 1.875rem;
+}
+
+.ms-table .btn-success, .ms-table .btn-danger, .ms-table .btn-warning{
+  height: 30px;
+  width: 53px;
+  font-size: small;
+  color: white;
+}
+
+/* img, svg{
+  vertical-align: middle;
+} */
